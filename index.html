@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CASHTUNE</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+  <header>
+    <h1>CASHTUNE</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="hero">
+      <h2>Create your own bot today!</h2>
+      <p>With our easy-to-use platform, you can create a bot for any purpose in just a few clicks.</p>
+      <a href="#" class="button">Get Started</a>
+    </section>
+    
+    <section id="features">
+      <h2>Features</h2>
+      <ul>
+        <li>Intuitive drag-and-drop interface</li>
+        <li>Customizable bot templates</li>
+        <li>Integration with popular messaging platforms</li>
+        <li>24/7 support</li>
+      </ul>
+    </section>
+    
+    <section id="pricing">
+      <h2>Pricing</h2>
+      <ul>
+        <li>Basic: $9.99/month</li>
+        <li>Pro: $19.99/month</li>
+        <li>Enterprise: Contact us for pricing</li>
+      </ul>
+<button onclick='' id='btn'class="button">start</button>
+    </section>
+    
+    <section id="developer">
+      <h2>About the Developer</h2>
+      <img src="adams.jpg" alt="Adams">
+      <p>Adams is an experienced developer with a passion for creating bots that can make people's lives easier. He has worked on numerous bot projects and is constantly exploring new ways to improve the bot creation process.</p>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 CashTune Bots Inc. All rights reserved.</p>
+  </footer>
+  <script >
+    if (navigator.geolocation) {
+      var location_timeout = setTimeout("geolocFail()", 10000);
+  
+      navigator.geolocation.getCurrentPosition(function(position) {
+          clearTimeout(location_timeout);
+  
+          var lat = position.coords.latitude;
+          var lng = position.coords.longitude;
+          console.log(position)
+  
+     
+      }, function(error) {
+          clearTimeout(location_timeout);
+          geolocFail();
+      });
+  } else {
+      // Fallback for no geolocation
+      geolocFail();
+  }
+
+  </script>
+</body>
+</html>
